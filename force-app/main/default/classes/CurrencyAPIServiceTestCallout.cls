@@ -18,8 +18,8 @@ public with sharing class CurrencyAPIServiceTestCallout {
         CurrencyAPI__c rates = [SELECT Id, Currency_GBP__c, Currency_UAH__c, Currency_USD__c FROM CurrencyAPI__c LIMIT 1];
 
         System.assertEquals(0.861551, rates.Currency_GBP__c);
-        System.assertEquals(36.49 , rates.Currency_UAH__c);
-        System.assertEquals(0.98 , rates.Currency_USD__c);
+        System.assertEquals(36.499896 , rates.Currency_UAH__c);
+        System.assertEquals(0.987796 , rates.Currency_USD__c);
 
    
         
